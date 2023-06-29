@@ -67,7 +67,7 @@ class App {
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
           >
-            <img src=${jsLogo} class="logo ts" alt="JavaScript logo" />
+            <img src=${jsLogo} class="logo js" alt="JavaScript logo" />
           </a>
           <a
             href="https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/"
