@@ -63,7 +63,7 @@ class App {
           <a href="https://vitejs.dev" target="_blank">
             <img src=${viteLogo} class="logo vite" alt="Vite logo" />
           </a>
-          <a href="https://tsjs.org" target="_blank">
+          <a href="https://www.typescriptlang.org/docs/" target="_blank">
             <img src=${tsLogo} class="logo ts" alt="TypeScript logo" />
           </a>
           <a
