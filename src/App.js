@@ -2,7 +2,7 @@ import './App.css';
 import { html, render } from 'lit-html';
 import motokoLogo from './assets/motoko_moving.png';
 import motokoShadowLogo from './assets/motoko_shadow.png';
-import tsLogo from './assets/ts.svg';
+import jsLogo from './assets/js.svg';
 import viteLogo from './assets/vite.svg';
 import { backend } from './declarations/backend';
 
@@ -10,7 +10,7 @@ class App {
   #count = 0;
   #loading = false;
 
-  set count(value: number) {
+  set count(value) {
     this.#count = value;
     this.#render();
   }
@@ -19,7 +19,7 @@ class App {
     return this.#count;
   }
 
-  set loading(value: boolean) {
+  set loading(value) {
     this.#loading = value;
     this.#render();
   }
@@ -63,8 +63,11 @@ class App {
           <a href="https://vitejs.dev" target="_blank">
             <img src=${viteLogo} class="logo vite" alt="Vite logo" />
           </a>
-          <a href="https://tsjs.org" target="_blank">
-            <img src=${tsLogo} class="logo ts" alt="TypeScript logo" />
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <img src=${jsLogo} class="logo ts" alt="JavaScript logo" />
           </a>
           <a
             href="https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko/"
@@ -80,19 +83,19 @@ class App {
             </span>
           </a>
         </div>
-        <h1>Vite + TypeScript + Motoko</h1>
+        <h1>Vite + JavaScript + Motoko</h1>
         <div class="card">
           <button id="count">count is ${this.count}</button>
           <p>Edit <code>backend/Backend.mo</code> and save to test HMR</p>
         </div>
         <p class="read-the-docs">
-          Click on the Vite, TypeScript, and Motoko logos to learn more
+          Click on the Vite, JavaScript, and Motoko logos to learn more
         </p>
       </div>
     `;
-    render(body, document.getElementById('root')!);
+    render(body, document.getElementById('root'));
     const opacity = this.loading ? 0.5 : 1;
-    const button = document.getElementById('count')!;
+    const button = document.getElementById('count');
     button.style.opacity = opacity.toString();
     button.onclick = this.increment;
   }
