@@ -13,7 +13,7 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.js:hover {
+.logo.svelte:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .logo.js {
+  .logo.svelte {
     animation: logo-spin infinite 60s linear;
   }
 }
