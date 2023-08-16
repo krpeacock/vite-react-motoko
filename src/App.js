@@ -10,9 +10,9 @@ class App {
     this.#render();
   }
 
-  #handleSubmit = async (e: SubmitEvent) => {
+  #handleSubmit = async (e) => {
     e.preventDefault();
-    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const name = document.getElementById('name').value;
     this.greeting = await backend.greet(name);
     this.#render();
   };
@@ -31,9 +31,9 @@ class App {
         <section id="greeting">${this.greeting}</section>
       </main>
     `;
-    render(body, document.getElementById('root')!);
+    render(body, document.getElementById('root'));
     document
-      .querySelector('form')!
+      .querySelector('form')
       .addEventListener('submit', this.#handleSubmit);
   }
 }
