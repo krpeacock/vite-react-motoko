@@ -5,9 +5,12 @@ import logo from './assets/logo2.svg';
 function App() {
   const [greeting, setGreeting] = useState('');
 
-  function handleSubmit(event) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const name = event.target.elements.name.value;
+    const nameInput: HTMLInputElement | null = (
+      event.target as HTMLFormElement
+    ).querySelector('#name');
+    const name = nameInput?.value || '';
     backend.greet(name).then((greeting) => {
       setGreeting(greeting);
     });
