@@ -7,8 +7,8 @@ describe('App', () => {
     const root = document.createElement('div');
     root.id = 'root';
     document.body.appendChild(root);
-    const app = new App();
+    new App();
 
-    expect(root.querySelector('.App')).not.toBeNull();
+    expect(root.querySelector('main')).toBeTruthy();
   });
 });

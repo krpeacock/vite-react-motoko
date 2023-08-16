@@ -40,6 +40,6 @@
     "vitest": "^0.32.2"
   },
   "dependencies": {
-    "lit-html": "^2.7.4"
+    "lit-html": "^2.8.0"
   }
 }
