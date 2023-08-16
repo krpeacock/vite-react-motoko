@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import environment from 'vite-plugin-environment';
+import vue from '@vitejs/plugin-vue';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -27,6 +28,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    vue(),
     environment('all', { prefix: 'CANISTER_' }),
     environment('all', { prefix: 'DFX_' }),
     environment({ BACKEND_CANISTER_ID: '' }),
