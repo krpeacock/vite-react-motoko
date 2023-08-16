@@ -7,7 +7,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
-  root: 'src',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -35,6 +34,6 @@ export default defineConfig({
   ],
   test: {
     environment: 'jsdom',
-    setupFiles: 'setupTests.ts',
+    setupFiles: 'src/setupTests.ts',
   },
 });
