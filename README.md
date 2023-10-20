@@ -2,7 +2,7 @@
 
 ### Get started directly in your browser:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rvanasa/vite-react-motoko)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/krpeacock/vite-react-motoko)
 
 This project template gives you everything you need to build a Web3 application on the [Internet Computer](https://internetcomputer.org/).
 
@@ -15,7 +15,7 @@ Make sure that [Node.js](https://nodejs.org/en/) `>= 16.x` and [`dfx`](https://i
 Run the following commands in a new, empty project directory:
 
 ```sh
-npx degit rvanasa/vite-react-motoko # Download this starter project
+npx degit krpeacock/vite-react-motoko # Download this starter project
 dfx start --clean --background # Run dfx in the background
 npm run setup # Install packages, deploy canisters, and generate type bindings
 
